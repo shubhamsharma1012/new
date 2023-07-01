@@ -12,10 +12,30 @@
 // take input from the user
 const number = prompt("Enter a number: ");
 
-//take a variable i and multiple it by input number 100 times
-for(var i = 1; i<101; i++) {
-    document.write(number*i ,'</br>');
+    if(number%15==0){
+        for(var i = 1; i<101; i++) {
+    
+       document.write(number*i + 'hello world' ,'</br>');
+    
+    }
+    }else if(number%5==0){
+        for(var i = 1; i<101; i++) {
+    
+    document.write(number*i + 'world' ,'</br>');
+    }
 }
+    
+    else if(number%3==0){
+        for(var i = 1; i<101; i++) {
+    
+    document.write(number*i + 'hello','</br>');
+ 
+ } 
+
+    }else{
+        document.write('choose write no');
+    }
+
 
 </script>
 
